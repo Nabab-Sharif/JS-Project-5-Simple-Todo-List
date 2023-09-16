@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+
+.todoBox {
+  width: 500px;
+  background-color: dimgray;
+  margin: 50px auto;
+  padding: 50px;
+
+}
+
+.todoBox h3 {
+  text-align: center;
+}
+
+
+.todoBox input {
+  margin-top: 20px;
+  padding: 20px;
+  width: 250px;
+  display: inline-block;
+
+}
+
+.todoBox .add {
+  padding: 20px;
+  width: 100px;
+  background-color: rgb(7, 162, 165);
+  border: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.todoBox .text .ul {
+
+  margin-top: 30px;
+}
+
+.todoBox .text .ul li {
+  font-size: 25px;
+  color: wheat;
+  margin-bottom: 10px;
+}
+
+.todoBox .text .ul li i {
+  color: rgb(229, 67, 67);
+  font-size: 20px;
+  margin-left: 10px;
+}
