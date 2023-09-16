@@ -1,12 +1,76 @@
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .todoBox {
+    width: auto;
+    padding: 24px;
+
+  }
 
   .todoBox input {
-    width: auto;
+    padding: 9px;
+    width: 138px;
+    font-size: 11px;
   }
+
+  .todoBox .add {
+    padding: 9px 30px;
+    font-size: 11px;
+  }
+
+  .todoBox .text .ul li {
+    font-size: 17px;
+    color: orange;
+
+  }
+
+  .todoBox .text .ul li i {
+    color: rgb(122, 14, 14);
+    font-size: 14px;
+
+  }
+
+  .todoBox .text .ul {
+    margin-top: 6px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
 
   .todoBox {
     width: auto;
     padding: 24px;
+
+  }
+
+  .todoBox input {
+    padding: 9px;
+    width: 138px;
+    font-size: 11px;
+  }
+
+  .todoBox .add {
+    padding: 9px 30px;
+    font-size: 11px;
+  }
+
+  .todoBox .text .ul li {
+    font-size: 17px;
+    color: orange;
+
+  }
+
+  .todoBox .text .ul li i {
+    color: rgb(122, 14, 14);
+    font-size: 14px;
+
+  }
+
+  .todoBox .text .ul {
+    margin-top: 6px;
   }
 
 }
