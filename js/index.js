@@ -1,24 +1,27 @@
 
 let input = document.querySelector('.input')
 let ul = document.querySelector('.ul');
-let add = document.querySelector('.add')
+let addItem = document.querySelector('.addItem');
 
-add.addEventListener('click', function () {
 
-  if (input.value === "") {
-    alert('please enter the value');
+
+addItem.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+
+  if (input.value) {
+    let li = document.createElement('li');
+    li.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
+    ul.append(li);
+
+    let trash = li.querySelector('i');
+    trash.addEventListener("click", function () {
+      li.remove();
+    })
+
+    input.value = '';
   } else {
-
-    let li = document.createElement('li');
-    li.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
-    ul.append(li);
-
-    let trash = li.querySelector('i');
-    trash.addEventListener("click", function () {
-      li.remove();
-    })
-
-    input.value = '';
+    alert('Please enter the value')
   }
 
 
@@ -26,22 +29,6 @@ add.addEventListener('click', function () {
 })
 
 
-input.addEventListener('keypress', function (e) {
-
-  if (e.key === "Enter") {
-    let li = document.createElement('li');
-    li.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
-    ul.append(li);
-    let trash = li.querySelector('i');
-    trash.addEventListener("click", function () {
-      li.remove();
-    })
-
-    input.value = '';
-  }
-
-
-})
 
 
 
